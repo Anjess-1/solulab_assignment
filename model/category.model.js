@@ -7,6 +7,7 @@ let categorySchema = new mongoose.Schema({
     },
     categoryName: {
         type: String,
+        unique: true,
         required: true
     }
 })
